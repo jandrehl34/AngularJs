@@ -9,6 +9,7 @@
         .when('/', {
            templateUrl: 'app/Component/home/homeview.html',
            controller:  'homeViewController'
+           //controllerAs: homeViewController ->> alias
         })
         .when('/login',{
             templateUrl: 'app/Component/login/loginview.html',
@@ -25,6 +26,39 @@
             templateUrl: 'app/Component/register/registerview.html',
             controller: 'registerViewController',
           //  controllerAd: 'dashsctrl'
+
+        })
+        .when('/dataview',{
+            templateUrl: 'app/Component/home/dataview.html',
+            controller: 'dataviewcontroller',
+            controllerAs: 'dashsctrl'
+
+        })
+        .when('/ListView',{
+            templateUrl: 'app/Component/home/ListView.html',
+            controller: 'ListViewController',
+            controllerAs: 'ListCtrl'
+
+        })
+        .when('/Checkbox',{
+            templateUrl: 'app/Component/home/checkbox.html',
+            controller: 'checkboxcontroller',
+
+        })
+        .when('/navdirective',{
+            templateUrl: 'app/Shared/navview.html',
+            controller: 'navController',
+
+        })
+        .when('/modal',{
+            templateUrl: 'app/component/Modal/modalview.html',
+            controller: 'modalinstanceController',
+
+        })
+        .when('/sessionhandling',{
+            templateUrl: 'app/component/sessionhandling/login.html',
+            controller: 'loginSessionController',
+            controllerAs : 'LSController'
 
         })
         .otherwise('/')

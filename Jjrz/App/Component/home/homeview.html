@@ -1,17 +1,32 @@
 
     <div class="panel panel-default" ng-controller="homeViewController">
         <!-- Default panel contents -->
+        <span class="my-name-restrict"></span>
         <div class="panel-heading">Key things to remember when building your first app</div>
         <table class="table">
             <ul class="list-group">
                 <li class="list-group-item">Welcome User : {{FirstName}} {{LastName}} {{Gender}}</li>
+                <li class="list-group-item">First Day</li>
                 <li class="list-group-item">app.module</li>
                 <li class="list-group-item">app.route</li>
                 <li class="list-group-item">ngroute</li>
                 <li class="list-group-item">ngcontroller</li>
                 <li class="list-group-item">ngmodel</li>
+                <li class="list-group-item">Using Route params</li>
+                <li class="list-group-item">Passing Parameters as JSON</li>
+                <li class="list-group-item">Second Day</li>
+                <li class="list-group-item">Second Day</li>
+                <li class="list-group-item">Angular Services  Share Code within youre app</li>
+                <li class="list-group-item">ngResource use to connect to database GET,POST</li>
+                <li class="list-group-item">ngSanitiZe for security </li>
+                <li class="list-group-item">Directive </li>
+                <li class="list-group-item">Modal </li>
+                <li class="list-group-item">Training Day 3 </li>
+                <li class="list-group-item">Session handling 1.local storage 2.sessionstorage </li>
+                {{FirstName}}
               </ul>
         </table>
+        <tr ng-repeat="x in records">{{x.Nameh}}</tr>
       </div>
 
         

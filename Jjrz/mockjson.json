@@ -1,0 +1,16 @@
+    {
+       "value" :
+       {
+          "_id" : null,
+          "firstname" : null,
+          "lastname"  : null,
+          "gender"    : null,
+       },
+       "list" : {
+           //array 
+               "namecollection" : 
+               [
+                {"_id": 1,"firstname":"jandrehl", "lastname":"Mangubat", "gender":"boy"}
+               ]
+            }
+   }    

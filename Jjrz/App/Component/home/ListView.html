@@ -1,0 +1,8 @@
+<div ng-controller="ListViewController">
+        I have {{friends.length}} friends. They are:
+        <ul >
+          <li ng-repeat="friend in friends.list.namecollection | filter:q as results track by friend.name">
+            [{{$index + 1}}] {{friend.name}} who is {{friend.age}} years old.
+          </li>
+        </ul>
+      </div>

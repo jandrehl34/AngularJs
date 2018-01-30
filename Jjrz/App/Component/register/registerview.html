@@ -15,7 +15,11 @@
       <input type="radio" ng-model ="Gender.name" value="Female" name="options" id="option2" autocomplete="off"> Female
     </label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" ng-click="submit()"class="btn btn-primary">Submit</button>
+
+  <p>Databinding SAMPLE using NG-MODEL: {{FirstName}} {{LastName}} {{Gender.name}}</p>
+
+   
 </form>
 
 

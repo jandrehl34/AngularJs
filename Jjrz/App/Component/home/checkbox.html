@@ -1,0 +1,8 @@
+<div ng-controller="checkboxcontroller">
+<label ng-repeat="role in roles">
+        <input type="checkbox" checklist-model="user.roles" checklist-value="role.id"> {{role.text}}
+</label>
+<button type="Button" ng-click="checkAll()" class="btn btn-primary">SelectAll</button>
+<button type="Button" ng-click="uncheckAll()" class="btn btn-primary">UnSelectAll</button>
+<button type="Button" ng-click="checkFirst()" class="btn btn-primary">CheckFirst</button>
+</div>
