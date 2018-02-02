@@ -1,19 +1,9 @@
 <div ng-controller="modalinstanceController" class="container">
     <h1>Modal example simple</h1>
     <button ng-click="show()" class="btn btn-default">Open modal</button>
-    <modal title="Login form" visible="showModal">
-      <form role="form">
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" />
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="Password" />
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>
-      {{yesNoResult}}
+    <button ng-click="showComplex()" class="btn btn-default">Open modal</button>
+    {{yesNoResult}}
+    {{complexResult}}
     </modal>
 
   </div>

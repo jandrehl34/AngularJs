@@ -5,6 +5,7 @@ angular
 function modalinstanceController($scope,ModalService)
 {
     $scope.yesNoResult= null;
+    $scope.complexResult = null;
     $scope.show = function()
     {
        console.log("Modal");
@@ -21,4 +22,26 @@ function modalinstanceController($scope,ModalService)
 
           console.log($scope.yesNoResult);
     }
+
+    $scope.showComplex = function() {
+
+      ModalService.showModal({
+        templateUrl: "app/component/modal/complexmodal.html",
+        controller: "complexmodalController",
+        preClose: (modal) => { modal.element.modal('hide'); },
+        inputs: {
+          title: "A More Complex Example"
+        }
+      }).then(function(modal) {
+        modal.element.modal();
+        modal.close.then(function(result) {
+          if (!result) {
+            $scope.complexResult = "Modal forcibly closed..."
+          } else {
+            $scope.complexResult  = "Name: " + result.name + ", age: " + result.age;
+          }
+        });
+      });
+  
+    };
 }

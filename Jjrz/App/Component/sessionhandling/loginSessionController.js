@@ -38,12 +38,12 @@ function loginSessionController(sessionhandlingservice,$sanitize,$localStorage,$
             sessionhandlingservice.login(data).then(function(success){
             console.log("login constroller success",success.data[0].firstname);
       //using localstorage
-           // $localStorage.login = {
-            //    _id : success.data[0]._id
-           // }
+            $localStorage.login = {
+                _id : success.data[0]._id
+            }
       //using cookie     
-           $cookieStore.put('cookieSession',success.data[0]._id);
-        ;
+          // $cookieStore.put('cookieSession',success.data[0]._id);
+        //;
 
           }, function(error){ 
               console.log("login controller error",error)
